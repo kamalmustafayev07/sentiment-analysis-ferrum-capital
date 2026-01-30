@@ -6,74 +6,68 @@ __pycache__/
 *.pyo
 *.pyd
 *.so
-*.egg-info/
-.eggs/
+.Python
 
 # =====================
-# Virtual environments
+# Virtual Environments
 # =====================
 venv/
-.env/
 .venv/
 env/
+ENV/
 
 # =====================
-# Jupyter / IPython
+# IDEs
 # =====================
-.ipynb_checkpoints/
+.vscode/
+.idea/
+*.iml
 
 # =====================
-# OS / IDE
+# OS
 # =====================
 .DS_Store
 Thumbs.db
-.idea/
-.vscode/
-*.swp
 
 # =====================
-# Logs & temp files
+# Logs / Cache
 # =====================
-logs/
 *.log
-tmp/
-temp/
+.cache/
+pytest_cache/
+.ipynb_checkpoints/
 
 # =====================
-# Data (raw / intermediate)
+# Data
 # =====================
 data/*
 !data/.gitkeep
 
 # =====================
-# Model artifacts
+# Models (CRITICAL)
 # =====================
-models/*
-!models/.gitkeep
+models/bert/
+models/bert/**
 
-# =====================
-# ML checkpoints & cache
-# =====================
-*.pkl
-*.joblib
-*.pt
+# Ignore large ML artifacts
+*.safetensors
 *.bin
+*.pt
 *.ckpt
+*.h5
 
-# HuggingFace / Transformers
-.cache/
-**/cache/
-hf_cache/
-transformers_cache/
+# =====================
+# TF-IDF models (optional)
+# Uncomment if you want to track them
+# models/tf_idf/*.pkl
 
 # =====================
 # Streamlit
 # =====================
-.streamlit/secrets.toml
+.streamlit/
 
 # =====================
-# Testing / coverage
+# Environment variables
 # =====================
-.pytest_cache/
-.coverage
-htmlcov/
+.env
+.env.*
