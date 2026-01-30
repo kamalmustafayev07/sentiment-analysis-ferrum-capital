@@ -1,7 +1,7 @@
 import os
 import joblib
 
-from preprocessing import clean_text
+from src.tf_idf.preprocessing import clean_text
 
 from src.config import LABEL_MAP, MODEL_PATH, VECTORIZER_PATH
 
@@ -24,5 +24,4 @@ if __name__ == "__main__":
 
         emotion = predict_emotion(text)
         print("Predicted emotion:", emotion)
-        print(clean_text("I am not happy"))
 

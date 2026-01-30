@@ -6,7 +6,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, accuracy_score
 
-from preprocessing import clean_text
+from src.tf_idf.preprocessing import clean_text
 
 from src.config import (
     TRAIN_PATH,
