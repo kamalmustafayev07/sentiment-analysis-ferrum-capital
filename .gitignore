@@ -1,0 +1,79 @@
+# =====================
+# Python
+# =====================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+
+# =====================
+# Virtual environments
+# =====================
+venv/
+.env/
+.venv/
+env/
+
+# =====================
+# Jupyter / IPython
+# =====================
+.ipynb_checkpoints/
+
+# =====================
+# OS / IDE
+# =====================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# =====================
+# Logs & temp files
+# =====================
+logs/
+*.log
+tmp/
+temp/
+
+# =====================
+# Data (raw / intermediate)
+# =====================
+data/*
+!data/.gitkeep
+
+# =====================
+# Model artifacts
+# =====================
+models/*
+!models/.gitkeep
+
+# =====================
+# ML checkpoints & cache
+# =====================
+*.pkl
+*.joblib
+*.pt
+*.bin
+*.ckpt
+
+# HuggingFace / Transformers
+.cache/
+**/cache/
+hf_cache/
+transformers_cache/
+
+# =====================
+# Streamlit
+# =====================
+.streamlit/secrets.toml
+
+# =====================
+# Testing / coverage
+# =====================
+.pytest_cache/
+.coverage
+htmlcov/
